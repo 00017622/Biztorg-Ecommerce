@@ -1,0 +1,2 @@
+ALTER TABLE "product_attribute_values" DROP CONSTRAINT "product_attribute_values_product_id_attribute_value_id_pk";--> statement-breakpoint
+CREATE UNIQUE INDEX "product_attribute_values_product_id_attribute_value_id_idx" ON "product_attribute_values" USING btree ("product_id","attribute_value_id");
