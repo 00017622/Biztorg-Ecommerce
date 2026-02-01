@@ -19,6 +19,8 @@ const envSchema = z.object({
   MAIL_ENCRYPTION: z.string().min(1),
   MAIL_FROM_ADDRESS: z.string().min(1),
   MAIL_FROM_NAME: z.string().min(1),
+  SWAGGER_USER: z.string().min(1),
+  SWAGGER_PASSWORD: z.string().min(1),
   GOOGLE_CLIENT_ID: z.string(),
   TELEGRAM_BOT_TOKEN: z.string(),
   TELEGRAM_CHAT_ID: z.string(),
